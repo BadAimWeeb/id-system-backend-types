@@ -1,2 +1,3 @@
-declare const _default: (token: string, options?: import("cf-turnstile").TurnstileOptions | undefined) => Promise<import("cf-turnstile").TurnstileResponse>;
+import turnstile from 'cf-turnstile';
+declare const _default: (token: string, options?: turnstile.TurnstileOptions | undefined) => Promise<turnstile.TurnstileResponse>;
 export default _default;

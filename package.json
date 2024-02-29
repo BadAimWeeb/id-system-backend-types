@@ -26,7 +26,7 @@
     "@types/nodemailer": "^6.4.7",
     "@types/tar-stream": "^3.1.3",
     "@types/ws": "^8.5.10",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   },
   "type": "module",
   "dependencies": {
@@ -34,6 +34,7 @@
     "@badaimweeb/js-protov2d": "^1.0.13",
     "@simplewebauthn/server": "^9.0.3",
     "@simplewebauthn/types": "^9.0.1",
+    "@sozialhelden/ietf-language-tags": "^5.4.2",
     "@zxcvbn-ts/core": "^3.0.4",
     "@zxcvbn-ts/language-common": "^3.0.4",
     "@zxcvbn-ts/language-en": "^3.0.2",

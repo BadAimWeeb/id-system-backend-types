@@ -1,5 +1,5 @@
 /// <reference types="ws" />
-/// <reference types="node" />
+/// <reference types="node" resolution-mode="require"/>
 import appAuth from "./public/appAuth.js";
 import getUUIDByUsername from "./public/getUUIDByUsername.js";
 import getUsernameByUUID from "./public/getUsernameByUUID.js";

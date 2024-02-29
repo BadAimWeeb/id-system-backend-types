@@ -1,5 +1,5 @@
 /// <reference types="ws" />
-/// <reference types="node" />
+/// <reference types="node" resolution-mode="require"/>
 declare const procedure: import("@badaimweeb/js-dtsocket").Procedure<{
     username: string;
     password: string;
