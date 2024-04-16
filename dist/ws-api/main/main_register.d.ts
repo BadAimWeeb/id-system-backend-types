@@ -1,11 +1,11 @@
 /// <reference types="ws" />
 /// <reference types="node" resolution-mode="require"/>
 declare const procedure: import("@badaimweeb/js-dtsocket").Procedure<{
+    username: string;
     email: string;
     firstName: string;
     lastName: string;
     nameOrder: "first-last" | "last-first";
-    username: string;
     password: string;
     captcha: string;
     phone?: string | undefined;

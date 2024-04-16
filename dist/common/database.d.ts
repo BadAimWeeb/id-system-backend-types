@@ -40,6 +40,10 @@ export declare const DBUsers: Collection<{
         isVerified: boolean;
         isPublic: boolean;
     }[];
+    externalLink: {
+        type: "discord";
+        userID: string;
+    }[];
     pgp: {
         name: string;
         publicKey: string;
