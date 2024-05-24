@@ -23,4 +23,6 @@ export declare const PGP_SIGNING_KEY_PASSPHRASE: string;
 export declare const SIGNAL_API_LOCATION: string;
 export declare const SIGNAL_API_PHONE_NUMBER: string | null;
 export declare const SIGNAL_API_AUTH: string | null;
+export declare const KONA_API_LOCATION: string;
+export declare const KONA_API_AUTH: string;
 export declare const DEV: boolean;

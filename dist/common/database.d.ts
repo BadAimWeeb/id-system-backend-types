@@ -50,6 +50,18 @@ export declare const DBUsers: Collection<{
         boundTo: string[];
         stripUserID: boolean;
     }[];
+    avatar?: {
+        type: "kona";
+        uuid: string;
+        url: string;
+        revokationKey: string;
+    } | {
+        type: "gravatar";
+        email: string;
+    } | {
+        type: "url";
+        url: string;
+    } | undefined;
     userLanguage: string;
     createdAt: number;
     updatedAt: number;

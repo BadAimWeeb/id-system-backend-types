@@ -2,6 +2,7 @@ export type GlobalState = {
     ipChallenge: Map<string, number>;
     internalRegenUserAuthLock: Map<string, Promise<string>>;
     cache: Map<string, any>;
+    httpUploadLock: Map<string, (r: Uint8Array) => void>;
 };
 export type LocalState = {
     appAuthData: {
@@ -39,5 +40,7 @@ export declare enum ErrorCode {
     NOT_LOGGED_IN = "BAWID#11",
     MFA_REQUIRED = "BAWID#12",
     MFA_INVALID = "BAWID#13",
-    OPERATION_NOT_PERMITTED = "BAWID#14"
+    OPERATION_NOT_PERMITTED = "BAWID#14",
+    CLIENT_SIDE_TIMED_OUT = "BAWID#15",
+    SERVER_SIDE_TIMED_OUT = "BAWID#16"
 }
