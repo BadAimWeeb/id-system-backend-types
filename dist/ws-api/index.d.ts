@@ -33,6 +33,7 @@ import main_resolveUUID from "./main/main_resolveUUID.js";
 import main_sendRecovery from "./main/main_sendRecovery.js";
 import main_sendVerificationEmail from "./main/main_sendVerificationEmail.js";
 import main_sendVerificationPhoneSignal from "./main/main_sendVerificationPhoneSignal.js";
+import main_setAvatar from "./main/main_setAvatar.js";
 import main_setUserAuth from "./main/main_setUserAuth.js";
 import main_verifyContact from "./main/main_verifyContact.js";
 import oauth2_clientRequest from "./oauth2/oauth2_clientRequest.js";
@@ -72,4 +73,4 @@ export declare const t1_removePhone: import("@badaimweeb/js-dtsocket").Procedure
 export declare const t1_verifySessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
     req: import("http").IncomingMessage;
 }>>>;
-export { appAuth, getUUIDByUsername, getUsernameByUUID, serverVersion, main_addEmail, main_addPGPKey, main_addPhone, main_changeAccountLanguage, main_changeName, main_changePassword, main_deleteEmail, main_deletePasskeys, main_deletePhone, main_editEmail, main_editPhone, main_enrollPasskeys, main_findPGPKey, main_generatePasskeyChallenge, main_getPasswordStrengthRecovery, main_getPGPKeyList, main_getSessions, main_getUserInfo, main_list1FPasskeys, main_login, main_logout, main_logoutSession, main_recoverPassword, main_register, main_removePGPKey, main_resolveUUID, main_sendRecovery, main_sendVerificationEmail, main_sendVerificationPhoneSignal, main_setUserAuth, main_verifyContact, oauth2_clientRequest, oauth2_clientRequestInitial, oauth2_getUserInfo, oauth2_revokeToken };
+export { appAuth, getUUIDByUsername, getUsernameByUUID, serverVersion, main_addEmail, main_addPGPKey, main_addPhone, main_changeAccountLanguage, main_changeName, main_changePassword, main_deleteEmail, main_deletePasskeys, main_deletePhone, main_editEmail, main_editPhone, main_enrollPasskeys, main_findPGPKey, main_generatePasskeyChallenge, main_getPasswordStrengthRecovery, main_getPGPKeyList, main_getSessions, main_getUserInfo, main_list1FPasskeys, main_login, main_logout, main_logoutSession, main_recoverPassword, main_register, main_removePGPKey, main_resolveUUID, main_sendRecovery, main_sendVerificationEmail, main_sendVerificationPhoneSignal, main_setAvatar, main_setUserAuth, main_verifyContact, oauth2_clientRequest, oauth2_clientRequestInitial, oauth2_getUserInfo, oauth2_revokeToken };
