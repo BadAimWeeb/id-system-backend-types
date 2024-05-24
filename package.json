@@ -19,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/google-libphonenumber": "^7.4.30",
     "@types/jsonwebtoken": "^9.0.5",
@@ -42,6 +43,7 @@
     "bcrypt": "^5.1.1",
     "cf-turnstile": "^1.0.8",
     "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "google-libphonenumber": "^3.2.34",
