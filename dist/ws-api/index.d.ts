@@ -20,10 +20,12 @@ import main_findPGPKey from "./main/main_findPGPKey.js";
 import main_generatePasskeyChallenge from "./main/main_generatePasskeyChallenge.js";
 import main_getPasswordStrengthRecovery from "./main/main_getPasswordStrengthRecovery.js";
 import main_getPGPKeyList from "./main/main_getPGPKeyList.js";
+import main_getServerSocialLink from "./main/main_getServerSocialLink.js";
 import main_getSessions from "./main/main_getSessions.js";
 import main_getUserInfo from "./main/main_getUserInfo.js";
 import main_list1FPasskeys from "./main/main_list1FPasskeys.js";
 import main_login from "./main/main_login.js";
+import main_loginWithSocialLink from "./main/main_loginWithSocialLink.js";
 import main_logout from "./main/main_logout.js";
 import main_logoutSession from "./main/main_logoutSession.js";
 import main_recoverPassword from "./main/main_recoverPassword.js";
@@ -73,4 +75,4 @@ export declare const t1_removePhone: import("@badaimweeb/js-dtsocket").Procedure
 export declare const t1_verifySessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
     req: import("http").IncomingMessage;
 }>>>;
-export { appAuth, getUUIDByUsername, getUsernameByUUID, serverVersion, main_addEmail, main_addPGPKey, main_addPhone, main_changeAccountLanguage, main_changeName, main_changePassword, main_deleteEmail, main_deletePasskeys, main_deletePhone, main_editEmail, main_editPhone, main_enrollPasskeys, main_findPGPKey, main_generatePasskeyChallenge, main_getPasswordStrengthRecovery, main_getPGPKeyList, main_getSessions, main_getUserInfo, main_list1FPasskeys, main_login, main_logout, main_logoutSession, main_recoverPassword, main_register, main_removePGPKey, main_resolveUUID, main_sendRecovery, main_sendVerificationEmail, main_sendVerificationPhoneSignal, main_setAvatar, main_setUserAuth, main_verifyContact, oauth2_clientRequest, oauth2_clientRequestInitial, oauth2_getUserInfo, oauth2_revokeToken };
+export { appAuth, getUUIDByUsername, getUsernameByUUID, serverVersion, main_addEmail, main_addPGPKey, main_addPhone, main_changeAccountLanguage, main_changeName, main_changePassword, main_deleteEmail, main_deletePasskeys, main_deletePhone, main_editEmail, main_editPhone, main_enrollPasskeys, main_findPGPKey, main_generatePasskeyChallenge, main_getPasswordStrengthRecovery, main_getPGPKeyList, main_getServerSocialLink, main_getSessions, main_getUserInfo, main_list1FPasskeys, main_login, main_loginWithSocialLink, main_logout, main_logoutSession, main_recoverPassword, main_register, main_removePGPKey, main_resolveUUID, main_sendRecovery, main_sendVerificationEmail, main_sendVerificationPhoneSignal, main_setAvatar, main_setUserAuth, main_verifyContact, oauth2_clientRequest, oauth2_clientRequestInitial, oauth2_getUserInfo, oauth2_revokeToken };
