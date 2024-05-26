@@ -8,7 +8,7 @@ export declare const DBUsers: Collection<{
     isNamePublic: boolean;
     username: string;
     passwordHash: string;
-    passwordMode: "bcrypt" | "yubiotp" | "passkeys";
+    passwordMode: "bcrypt" | "yubiotp" | "passkeys" | "social-only";
     passkeys: {
         displayName: string;
         credentialID: string;
@@ -40,10 +40,22 @@ export declare const DBUsers: Collection<{
         isVerified: boolean;
         isPublic: boolean;
     }[];
-    externalLink: {
+    externalLink: (({
         type: "discord";
         userID: string;
-    }[];
+        cachedUsername: string;
+    } | {
+        type: "google";
+        userID: string;
+        cachedEmail: string;
+    } | {
+        type: "github";
+        userID: string;
+        cachedUsername: string;
+    }) & {
+        accessToken?: string;
+        refreshToken?: string;
+    })[];
     pgp: {
         name: string;
         publicKey: string;

@@ -3,6 +3,10 @@ export type GlobalState = {
     internalRegenUserAuthLock: Map<string, Promise<string>>;
     cache: Map<string, any>;
     httpUploadLock: Map<string, (r: Uint8Array) => void>;
+    socialLinkIntermediateMap: Map<string, {
+        refresh: string;
+        access: string;
+    }>;
 };
 export type LocalState = {
     appAuthData: {

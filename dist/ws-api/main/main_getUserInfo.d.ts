@@ -17,6 +17,7 @@ declare const procedure: import("@badaimweeb/js-dtsocket").Procedure<void, {
     userLanguage: string;
     passkeysOnly: boolean;
     hasPasskeys: boolean;
+    socialOnlyLogin: boolean;
     avatar: {
         type: string;
         url: string;
