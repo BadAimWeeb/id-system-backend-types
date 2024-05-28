@@ -42,19 +42,18 @@ export declare const DBUsers: Collection<{
     }[];
     externalLink: (({
         type: "discord";
-        userID: string;
         cachedUsername: string;
     } | {
         type: "google";
-        userID: string;
         cachedEmail: string;
     } | {
         type: "github";
-        userID: string;
         cachedUsername: string;
     }) & {
+        userID: string;
         accessToken?: string;
         refreshToken?: string;
+        lastCached: number;
     })[];
     pgp: {
         name: string;

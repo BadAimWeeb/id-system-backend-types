@@ -47,6 +47,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "google-libphonenumber": "^3.2.34",
+    "googleapis": "^137.1.0",
     "ip-address": "^9.0.5",
     "jsonwebtoken": "^9.0.2",
     "mmdb-lib": "^2.1.0",
