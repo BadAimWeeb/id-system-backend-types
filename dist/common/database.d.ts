@@ -46,6 +46,8 @@ export declare const DBUsers: Collection<{
     } | {
         type: "google";
         cachedEmail: string;
+        cachedFirstName: string;
+        cachedLastName: string;
     } | {
         type: "github";
         cachedUsername: string;
