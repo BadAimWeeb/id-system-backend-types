@@ -6,6 +6,7 @@ export type GlobalState = {
     socialLinkIntermediateMap: Map<string, {
         refresh: string;
         access: string;
+        provider: string;
     }>;
 };
 export type LocalState = {
