@@ -74,7 +74,7 @@ export declare const DBUsers: Collection<{
     } | {
         type: "url";
         url: string;
-    } | undefined;
+    };
     userLanguage: string;
     createdAt: number;
     updatedAt: number;
@@ -85,7 +85,7 @@ export declare const DBUserAccessTokens: Collection<{
     toUUID: string;
     createdAt: number;
     expiresAt: number;
-    nextPointer?: string | undefined;
+    nextPointer?: string;
     extraData?: any | {
         userAgent: string;
         ip: string;
@@ -95,7 +95,7 @@ export declare const DBUserAccessTokens: Collection<{
 export declare const DBOAuth2RefreshTokens: Collection<{
     version: number;
     token: string;
-    pointerAccessToken?: string | undefined;
+    pointerAccessToken?: string;
     requestedBy: string;
     toUUID: string;
     scopes: string[];
@@ -144,7 +144,7 @@ export declare const DBVerify: Collection<{
     type: "email" | "signal" | "recovery";
     userUUID: string;
     key: string;
-    hiddenKey?: string | undefined;
+    hiddenKey?: string;
     data: string;
     createdAt: number;
     expiresAt: number;

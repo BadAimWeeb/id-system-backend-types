@@ -1,7 +1,6 @@
-/// <reference types="node" resolution-mode="require"/>
 export declare function uploadImage(image: Uint8Array | Blob | Buffer): Promise<{
     id: string;
-    owner?: string | undefined;
+    owner?: string;
     revokationKey: string;
     imageSourceFormat: string;
     imageDimensions: {
@@ -14,7 +13,7 @@ export declare function deleteImage(imageID: string, revokationKey?: string): Pr
 }>;
 export declare function resizeAndConvertImage(imageID: string, format: string, width?: number): Promise<{
     id: string;
-    owner?: string | undefined;
+    owner?: string;
     revokationKey: string;
     imageSourceFormat: string;
     imageDimensions: {

@@ -5,5 +5,5 @@ export default function sendSignal(phoneNumber: string, message: {
     };
     data: Record<string, string>;
 } | string): Promise<{
-    timestamp?: string | undefined;
+    timestamp?: string;
 } | undefined>;

@@ -1,10 +1,8 @@
-/// <reference types="ws" />
-/// <reference types="node" resolution-mode="require"/>
 declare const procedure: import("@badaimweeb/js-dtsocket").Procedure<void, {
     ip: any;
     browser: string | undefined;
     os: string | undefined;
-    device: "mobile" | "tablet" | "console" | "smarttv" | "wearable" | undefined;
+    device: "mobile" | "tablet" | "console" | "smarttv" | "wearable" | "xr" | "embedded" | undefined;
     location: import("mmdb-lib").CityResponse | null;
     tor: boolean;
     cloudflare: boolean;
