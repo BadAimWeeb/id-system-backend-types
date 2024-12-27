@@ -16,6 +16,21 @@ declare const procedure: import("@badaimweeb/js-dtsocket").Procedure<string, {
     lastName: string | null;
     nameOrder: "first-last" | "last-first" | null;
     avatar: string | null;
+    links: {
+        github: {
+            username: string;
+            id: string;
+        } | null;
+        google: {
+            id: string;
+            firstName: string;
+            lastName: string;
+        } | null;
+        discord: {
+            username: string;
+            id: string;
+        } | null;
+    };
 }, import("@badaimweeb/js-dtsocket").ServerContext<import("../../types.js").GlobalState, import("../../types.js").LocalState, import("../../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
     req: import("http").IncomingMessage;
 }>>>;

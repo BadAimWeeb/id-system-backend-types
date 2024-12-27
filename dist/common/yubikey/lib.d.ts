@@ -1,8 +1,10 @@
 export interface YubikeyVerifyResult {
-    /** YubiKey ID. For comparision, use {@link identityNum} instead. */
+    /** YubiKey ID. For comparision, use {@link identityNum} or {@link identityHex} instead. */
     identity: string;
     /** YubiKey ID in hex, useful for comparision. */
     identityHex: string;
+    /** YubiKey ID in number, useful for comparision. */
+    identityNum: number;
     /** Status returned from server */
     status: string;
     /** Server used for verification */
