@@ -1,0 +1,10 @@
+import type { Collection, WithId } from "mongodb";
+export type DatabaseReturnType<T extends Collection<any>> = T extends Collection<infer U> ? WithId<U> : never;
+export { DBApplications } from "./DBApplications.js";
+export { DBOAuth2AccessTokens } from "./DBOAuth2AccessTokens.js";
+export { DBOAuth2AuthorizationCodes } from "./DBOAuth2AuthorizationCodes.js";
+export { DBOAuth2RefreshTokens } from "./DBOAuth2RefreshTokens.js";
+export { DBUserAccessTokens } from "./DBUserAccessTokens.js";
+export { DBUsers } from "./DBUsers.js";
+export { DBVerify } from "./DBVerify.js";
+export { DBConfig, getDBConfig, setDBConfig } from "./DBConfig.js";

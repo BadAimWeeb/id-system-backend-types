@@ -28,6 +28,7 @@ import main_login from "./main/main_login.js";
 import main_loginWithSocialLink from "./main/main_loginWithSocialLink.js";
 import main_logout from "./main/main_logout.js";
 import main_logoutSession from "./main/main_logoutSession.js";
+import main_markPrimaryEmailPhone from "./main/main_markPrimaryEmailPhone.js";
 import main_recoverPassword from "./main/main_recoverPassword.js";
 import main_register from "./main/main_register.js";
 import main_removePGPKey from "./main/main_removePGPKey.js";
@@ -43,37 +44,37 @@ import oauth2_clientRequest from "./oauth2/oauth2_clientRequest.js";
 import oauth2_clientRequestInitial from "./oauth2/oauth2_clientRequestInitial.js";
 import oauth2_getUserInfo from "./oauth2/oauth2_getUserInfo.js";
 import oauth2_revokeToken from "./oauth2/oauth2_revokeToken.js";
-export declare const t1_addEmail: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_addEmail: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_addPhone: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_addPhone: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_changePassword: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_changePassword: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_endSessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_endSessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_generateSessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_generateSessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_getInfoFromUAppToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_getInfoFromUAppToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_login: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_login: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_register: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_register: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_removeEmail: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_removeEmail: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_removePhone: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_removePhone: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export declare const t1_verifySessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").WebSocket & {
+export declare const t1_verifySessionToken: import("@badaimweeb/js-dtsocket").Procedure<any, never, import("@badaimweeb/js-dtsocket").ServerContext<import("../types.js").GlobalState, import("../types.js").LocalState, import("../types.js").EventTable, import("@badaimweeb/js-protov2d").Session<import("ws").default & {
     req: import("http").IncomingMessage;
 }>>>;
-export { appAuth, getUUIDByUsername, getUsernameByUUID, serverVersion, main_addEmail, main_addPGPKey, main_addPhone, main_addUserSocialLink, main_changeAccountLanguage, main_changeName, main_changePassword, main_deleteEmail, main_deletePasskeys, main_deletePhone, main_editEmail, main_editPhone, main_enrollPasskeys, main_findPGPKey, main_generatePasskeyChallenge, main_getPasswordStrengthRecovery, main_getPGPKeyList, main_getServerSocialLink, main_getSessions, main_getUserInfo, main_getUserSocialLink, main_list1FPasskeys, main_login, main_loginWithSocialLink, main_logout, main_logoutSession, main_recoverPassword, main_register, main_removePGPKey, main_removeUserSocialLink, main_resolveUUID, main_sendRecovery, main_sendVerificationEmail, main_sendVerificationPhoneSignal, main_setAvatar, main_setUserAuth, main_verifyContact, oauth2_clientRequest, oauth2_clientRequestInitial, oauth2_getUserInfo, oauth2_revokeToken };
+export { appAuth, getUUIDByUsername, getUsernameByUUID, serverVersion, main_addEmail, main_addPGPKey, main_addPhone, main_addUserSocialLink, main_changeAccountLanguage, main_changeName, main_changePassword, main_deleteEmail, main_deletePasskeys, main_deletePhone, main_editEmail, main_editPhone, main_enrollPasskeys, main_findPGPKey, main_generatePasskeyChallenge, main_getPasswordStrengthRecovery, main_getPGPKeyList, main_getServerSocialLink, main_getSessions, main_getUserInfo, main_getUserSocialLink, main_list1FPasskeys, main_login, main_loginWithSocialLink, main_logout, main_logoutSession, main_markPrimaryEmailPhone, main_recoverPassword, main_register, main_removePGPKey, main_removeUserSocialLink, main_resolveUUID, main_sendRecovery, main_sendVerificationEmail, main_sendVerificationPhoneSignal, main_setAvatar, main_setUserAuth, main_verifyContact, oauth2_clientRequest, oauth2_clientRequestInitial, oauth2_getUserInfo, oauth2_revokeToken };
