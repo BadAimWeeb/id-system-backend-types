@@ -4,7 +4,7 @@ export declare const DBConfig: import("mongodb").Collection<{
     value: any;
 }>;
 export type ConfigType = {
-    signingKeys: Record<"RS256" | "RS384" | "RS512" | "ES256" | "ES384" | "ES512" | "PS256" | "PS384" | "PS512" | "EdDSA" | "ES256K", {
+    signingKeys: Record<"RS256" | "RS384" | "RS512" | "ES256" | "ES384" | "ES512" | "PS256" | "PS384" | "PS512" | "EdDSA" | "Ed25519", {
         private: JWK;
         public: JWK;
     }>;
