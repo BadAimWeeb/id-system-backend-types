@@ -1,10 +1,9 @@
 export declare const EMAIL_REGEX: RegExp;
+export declare const NULL_UUID = "00000000-0000-0000-0000-000000000000";
 export declare const BCRYPT_SALT_ROUNDS = 14;
 export declare const LISTEN_PORT: number;
 export declare const PRIVATE_KEY: string;
 export declare const PUBLIC_KEY: string;
-export declare const JWT_PRIVATE_KEY: CryptoKey;
-export declare const JWT_PUBLIC_KEY: CryptoKey;
 export declare const TURNSTILE_SECRET_KEY: string;
 export declare const MONGODB_ADDRESS: string;
 export declare const MONGODB_DATABASE: string;
