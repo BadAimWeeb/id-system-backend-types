@@ -1,2 +1,2 @@
-declare const limiter: import("express-rate-limit").RateLimitRequestHandler;
-export default limiter;
+import { type Express, Router } from 'express';
+export default function useRateLimit(app: Express): Router;

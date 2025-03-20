@@ -1,2 +1,2 @@
-import type { Express } from 'express';
+import { type Express } from 'express';
 export default function (app: Express): void;

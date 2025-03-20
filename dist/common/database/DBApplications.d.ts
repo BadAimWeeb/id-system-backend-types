@@ -21,6 +21,10 @@ export declare const DBApplications: import("mongodb").Collection<{
     userInfoEncryptionAlgo?: string;
     userInfoEncryptionEnc?: string;
     userInfoEncryptionKey?: JWK;
+    idTokenSignAlgo?: string;
+    idTokenEncryptionAlgo?: string;
+    idTokenEncryptionEnc?: string;
+    idTokenEncryptionKey?: JWK;
     verified?: boolean;
     secret: string;
     createdAt: number;
